@@ -27,16 +27,16 @@ function playRound(humanChoice, computerChoice) {
   if((humanChoice === "rock" && computerChoice == "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")) {
     alert(`                                       YOU WIN! 
        You picked ${humanChoice}, Computer picked ${computerChoice} || ${humanChoice} beats ${computerChoice}
-                         Your Score ${humanScore += 1} : Computer Score ${computerScore}`);
+                         Your Score ${humanScore += 1} : ${computerScore} Computer Score`);
   }
   else if((humanChoice === "rock" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "rock")){
     alert(`                                    COMPUTER WINS! 
       You picked ${humanChoice}, Computer picked ${computerChoice} || ${computerChoice} beats ${humanChoice}
-                       Your Score ${humanScore} : Computer Score ${computerScore += 1}`);
+                       Your Score ${humanScore} : ${computerScore += 1} Computer Score`);
   }
   else if(humanChoice === computerChoice){
-    alert(`TIRE, You picked ${humanChoice} Computer picked ${computerChoice} 
-     Your Score ${humanScore} : Computer Score ${computerScore}`);
+    alert(`TIRE || You picked ${humanChoice}, Computer picked ${computerChoice} 
+     Your Score ${humanScore} : ${computerScore} Computer Score`);
   }
   else {
     alert("Wrong input, plaese try again")
@@ -53,12 +53,16 @@ function playGame() {
   }
 
   if(humanScore > computerScore) {
-    alert(`Congratulations, You Won!🏆
-    Your score: ${humanScore} : Computer score: ${computerScore}`)
+    alert(`Congratulations, You Won! 🏆
+    Your score: ${humanScore} : ${computerScore} Computer score`)
+  }
+  else if(humanScore < computerScore) {
+    alert(`You lost to the computer! 😥
+    Your score: ${humanScore} : ${computerScore} Computer score`)
   }
   else {
-    alert(`You lost to the computer!😥
-    Your score: ${humanScore} : Computer score: ${computerScore}`)
+    alert(`TIRED! 🌝
+    Your score: ${humanScore} : ${computerScore} Computer score`)
   }
 }
 
