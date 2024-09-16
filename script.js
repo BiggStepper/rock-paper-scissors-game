@@ -3,7 +3,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function getComputerChoice() {
-  let randomNumber = Math.floor((Math.random() * 3) + 1)
+  let randomNumber = Math.floor((Math.random() * 3) + 1);
   switch(randomNumber) {
     case 1:
       return "rock";
@@ -39,7 +39,7 @@ function playRound(humanChoice, computerChoice) {
      Your Score ${humanScore} : ${computerScore} Computer Score`);
   }
   else {
-    alert("Wrong input, plaese try again")
+    alert("Wrong input, plaese try again");
   }
 
 }
@@ -54,15 +54,15 @@ function playGame() {
 
   if(humanScore > computerScore) {
     alert(`Congratulations, You Won! 🏆
-    Your score: ${humanScore} : ${computerScore} Computer score`)
+    Your score: ${humanScore} : ${computerScore} Computer score`);
   }
   else if(humanScore < computerScore) {
     alert(`You lost to the computer! 😥
-    Your score: ${humanScore} : ${computerScore} Computer score`)
+    Your score: ${humanScore} : ${computerScore} Computer score`);
   }
   else {
     alert(`TIRED! 🌝
-    Your score: ${humanScore} : ${computerScore} Computer score`)
+    Your score: ${humanScore} : ${computerScore} Computer score`);
   }
 }
 
