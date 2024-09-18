@@ -1,0 +1,41 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.answer-container > span {
+  border-radius: 10px;
+  font-size: 5rem;
+  height: 50px;
+  width: 50;
+  background-color: lightgray;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.container > button {
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 5rem;
+  background-color: color-mix(in srgb, blue 30%, black 70%);
+}
+
+.container > button:active {
+  border-radius: 10px;
+  transition: 0.25s;
+  background-color: white;
+  border: 1px solid color-mix(in srgb, blue 30%, black 70%);
+}
